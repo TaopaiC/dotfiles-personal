@@ -1,0 +1,5 @@
+#!/bin/sh
+XDG_CONFIG_HOME=${XDG_CONFIG_HOME-$HOME/.config}
+if [ ! -f ~/.screenrc ]; then
+  ln -s $XDG_CONFIG_HOME/screen/screenrc ~/.screenrc
+fi

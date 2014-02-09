@@ -1,0 +1,10 @@
+#!/bin/sh
+XDG_CONFIG_HOME=${XDG_CONFIG_HOME-$HOME/.config}
+if [ ! -f ~/.zshrc ]; then
+  ln -s $XDG_CONFIG_HOME/zsh/zshrc ~/.zshrc
+fi
+
+if [ ! -d $HOME/.oh-my-zsh ]; then
+  git clone https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
+  echo "install oh-my-zsh"
+fi
