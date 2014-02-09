@@ -2,4 +2,6 @@
 XDG_CONFIG_HOME=${XDG_CONFIG_HOME-$HOME/.config}
 if [ ! -f ~/.bashrc ]; then
   ln -s $XDG_CONFIG_HOME/bash/bashrc ~/.bashrc
+else
+  echo "~/.bashrc already existed"
 fi
