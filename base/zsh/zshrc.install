@@ -2,6 +2,8 @@
 XDG_CONFIG_HOME=${XDG_CONFIG_HOME-$HOME/.config}
 if [ ! -f ~/.zshrc ]; then
   ln -s $XDG_CONFIG_HOME/zsh/zshrc ~/.zshrc
+else
+  echo "~/.zshrc already existed"
 fi
 
 if [ ! -d $HOME/.oh-my-zsh ]; then
