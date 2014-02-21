@@ -27,6 +27,6 @@ if  [ ! -f Sauce\ Code\ Powerline\ Semibold.otf ]; then
   wget https://github.com/Lokaltog/powerline-fonts/raw/master/SourceCodePro/Sauce%20Code%20Powerline%20Semibold.otf
 fi
 
-if type "fc-cache" > /dev/null; then
+if type "fc-cache" &> /dev/null; then
   fc-cache -vf ~/.fonts
 fi
