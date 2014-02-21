@@ -1,0 +1,30 @@
+#!/bin/sh
+mkdir -p ~/.fonts
+# https://github.com/Lokaltog/powerline-fonts
+cd ~/.fonts
+if  [ ! -f Inconsolata\ for\ Powerline.otf ]; then
+  wget https://github.com/Lokaltog/powerline-fonts/raw/master/Inconsolata/Inconsolata%20for%20Powerline.otf
+fi
+if  [ ! -f Sauce\ Code\ Powerline\ Black.otf ]; then
+  wget https://github.com/Lokaltog/powerline-fonts/raw/master/SourceCodePro/Sauce%20Code%20Powerline%20Black.otf
+fi
+if  [ ! -f Sauce\ Code\ Powerline\ Bold.otf ]; then
+  wget https://github.com/Lokaltog/powerline-fonts/raw/master/SourceCodePro/Sauce%20Code%20Powerline%20Bold.otf
+fi
+if  [ ! -f Sauce\ Code\ Powerline\ ExtraLight.otf ]; then
+  wget https://github.com/Lokaltog/powerline-fonts/raw/master/SourceCodePro/Sauce%20Code%20Powerline%20ExtraLight.otf
+fi
+if  [ ! -f Sauce\ Code\ Powerline\ Light.otf ]; then
+  wget https://github.com/Lokaltog/powerline-fonts/raw/master/SourceCodePro/Sauce%20Code%20Powerline%20Light.otf
+fi
+if  [ ! -f Sauce\ Code\ Powerline\ Medium.otf ]; then
+  wget https://github.com/Lokaltog/powerline-fonts/raw/master/SourceCodePro/Sauce%20Code%20Powerline%20Medium.otf
+fi
+if  [ ! -f Sauce\ Code\ Powerline\ Regular.otf ]; then
+  wget https://github.com/Lokaltog/powerline-fonts/raw/master/SourceCodePro/Sauce%20Code%20Powerline%20Regular.otf
+fi
+if  [ ! -f Sauce\ Code\ Powerline\ Semibold.otf ]; then
+  wget https://github.com/Lokaltog/powerline-fonts/raw/master/SourceCodePro/Sauce%20Code%20Powerline%20Semibold.otf
+fi
+
+fc-cache -vf ~/.fonts
