@@ -2,7 +2,7 @@ export CURRENT_PROJECT_PATH=$HOME/.current-project
 
 function chpwd {
   echo $(pwd) >! $CURRENT_PROJECT_PATH
-  ls
+  ls -G
 }
 
 cd_to_most_recently_opened_directory() {
