@@ -1,7 +1,12 @@
-#!/bin/sh
-mkdir -p ~/.fonts
+#!/bin/bash
+XDG_CONFIG_HOME=${XDG_CONFIG_HOME-$HOME/.config}
+if [ ! -f $HOME/.fonts ]; then
+  ln -s $XDG_CONFIG_HOME/fonts $HOME/.fonts
+else
+  echo "~/.fonts already existed"
+fi
+
 # https://github.com/Lokaltog/powerline-fonts
-cd ~/.fonts
 if  [ ! -f Inconsolata\ for\ Powerline.otf ]; then
   wget https://github.com/Lokaltog/powerline-fonts/raw/master/Inconsolata/Inconsolata%20for%20Powerline.otf
 fi
@@ -27,6 +32,10 @@ if  [ ! -f Sauce\ Code\ Powerline\ Semibold.otf ]; then
   wget https://github.com/Lokaltog/powerline-fonts/raw/master/SourceCodePro/Sauce%20Code%20Powerline%20Semibold.otf
 fi
 
-if type "fc-cache" &> /dev/null; then
-  fc-cache -vf ~/.fonts
+if [ "$(uname)" == "Darwin" ]; then
+  cp * $HOME/Library/Fonts/
+elif [ "$(uname -s)" == "Linux" ]; then
+  if type "fc-cache" &> /dev/null; then
+    fc-cache -vf ~/.fonts
+  fi
 fi
