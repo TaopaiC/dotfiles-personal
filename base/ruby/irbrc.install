@@ -1,0 +1,8 @@
+#!/bin/sh
+XDG_CONFIG_HOME=${XDG_CONFIG_HOME-$HOME/.config}
+if [ ! -f ~/.irbrc ]; then
+  echo "link ~/.irbrc"
+  ln -s $XDG_CONFIG_HOME/ruby/irbrc ~/.irbrc
+else
+  echo "~/.irbrc already existed"
+fi

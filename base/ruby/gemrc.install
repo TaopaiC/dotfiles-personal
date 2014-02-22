@@ -1,0 +1,8 @@
+#!/bin/sh
+XDG_CONFIG_HOME=${XDG_CONFIG_HOME-$HOME/.config}
+if [ ! -f ~/.gemrc ]; then
+  echo "link ~/.gemrc"
+  ln -s $XDG_CONFIG_HOME/ruby/gemrc ~/.gemrc
+else
+  echo "~/.gemrc already existed"
+fi
