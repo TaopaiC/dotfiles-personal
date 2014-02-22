@@ -1,0 +1,7 @@
+#!/bin/sh
+if [ ! -d $HOME/.oh-my-zsh ]; then
+  echo "installing nvm to ~/.nvm"
+  git clone https://github.com/creationix/nvm.git $HOME/.nvm
+else
+  echo "nvm already installed on ~/.nvm"
+fi
