@@ -4,6 +4,6 @@ export PATH=$PATH:$HOME/node_modules/.bin
 export PATH=$PATH:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/local/bin:/opt/local/sbin:/usr/local/sbin:/usr/games
 export PATH=$PATH:$HOME/.local/bin
 
-for file in ~/.config/zsh/config.d/*; do
-  source "$file"
+for zsh_source in ~/.config/zsh/config.d/*.zsh; do
+  source $zsh_source
 done
