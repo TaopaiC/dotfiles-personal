@@ -39,10 +39,14 @@ DEFAULT_USER="pctao"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git history knife jira)
-#plugins=(git ruby bundler history knife jira)
-plugins=($plugins debian nginx)
-plugins=($plugins profiles)
+plugins=(git history profiles z)
+# work
+plugins=($plugins knife jira)
+# ruby
+plugins=($plugins ruby bundler rbenv)
+## extended by dots
+!!@@plugins
+## end of extended by dots
 
 alias sudo='nocorrect sudo'
 alias gksu='nocorrect gksu'
