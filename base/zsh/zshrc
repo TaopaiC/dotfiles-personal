@@ -1,5 +1,5 @@
 # Customize to your needs...
-if [[ -z $TMUX  ]]; then
+if [[ -z $TMUXX  ]]; then
   export PATH=/opt/local/sbin:/opt/local/bin:$PATH
   export PATH=$HOME/node_modules/.bin:$PATH
   export PATH=$HOME/.local/bin:$PATH
