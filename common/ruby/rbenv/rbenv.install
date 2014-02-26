@@ -5,3 +5,17 @@ if [ ! -d $HOME/.rbenv ]; then
 else
   echo "rbenv already installed on ~/.rbenv"
 fi
+
+if [ ! -d $HOME/.rbenv/plugins/ruby-build ]; then
+  echo "installing ruby-build to ~/.rbenv/plugins/ruby-build"
+  git clone https://github.com/sstephenson/ruby-build.git $HOME/.rbenv/plugins/ruby-build
+else
+  echo "ruby-build already installed on ~/.rbenv/plugins/ruby-build"
+fi
+
+if [ ! -d $HOME/.rbenv/plugins/rbenv-gem-rehash ]; then
+  echo "installing rbenv-gem-rehash to ~/.rbenv/plugins/rbenv-gem-rehash"
+  git clone https://github.com/sstephenson/rbenv-gem-rehash.git $HOME/.rbenv/plugins/rbenv-gem-rehash
+else
+  echo "rbenv-gem-rehash already installed on ~/.rbenv/plugins/rbenv-gem-rehash"
+fi
