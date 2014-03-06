@@ -1,5 +1,7 @@
 Host *
+  Protocol 2
   IdentityFile ~/.ssh/id_rsa
   ServerAliveInterval 60
+  # ServerAliveCountMax 10
   TCPKeepAlive yes
   ForwardAgent yes
