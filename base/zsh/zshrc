@@ -9,5 +9,3 @@ fi
 for zsh_source in ~/.config/zsh/config.d/*.zsh; do
   source $zsh_source
 done
-
-cd_to_most_recently_opened_directory
