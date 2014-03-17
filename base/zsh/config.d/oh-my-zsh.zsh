@@ -44,6 +44,7 @@ plugins=(git history profiles z)
 plugins=($plugins knife jira)
 # ruby
 plugins=($plugins ruby bundler rbenv)
+plugins=($plugins sublime tmux)
 ## extended by dots
 !!@@plugins
 ## end of extended by dots

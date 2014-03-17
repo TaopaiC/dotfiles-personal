@@ -1,1 +1,1 @@
-plugins=($plugins osx)
+plugins=($plugins osx brew)
