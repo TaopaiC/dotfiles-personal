@@ -6,7 +6,7 @@ else
   echo "~/.zshrc already existed"
 fi
 
-if [ ! -d $HOME/.oh-my-zsh ]; then
+if [ ! -f $HOME/.oh-my-zsh/oh-my-zsh.sh ]; then
   git clone https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
   echo "install oh-my-zsh"
 fi
