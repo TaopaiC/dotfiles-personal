@@ -42,8 +42,6 @@ DEFAULT_USER="pctao"
 plugins=(git history profiles z)
 # work
 plugins=($plugins knife jira)
-# ruby
-plugins=($plugins ruby bundler rbenv)
 plugins=($plugins sublime tmux)
 ## extended by dots
 !!@@plugins
