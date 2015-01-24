@@ -1,0 +1,2 @@
+# powerline tmux config
+if-shell "[ -f ~/.config/powerline/powerline.conf ]" 'source ~/.config/powerline/powerline.conf'
