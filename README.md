@@ -6,9 +6,8 @@ Using [dots](https://github.com/EvanPurkhiser/dots) to setup dotfiles.
 ### Init
 
 ```sh
-git clone git@github.com:TaopaiC/dotfiles-personal.git
-cd dotfiles
-./init
+git clone https://github.com/TaopaiC/dotfiles-personal.git
+source dotfiles-personal/init
 ```
 
 ### Setup groups
