@@ -1,2 +1,10 @@
 #!/bin/sh
-pip install --user git+https://github.com/powerline/powerline
+unamestr=`uname`
+if [[ "$unamestr" == 'Darwin'  ]]; then
+  echo "To install python pip, need sudo permission:"
+  sudo easy_install pip
+  pip install --user git+https://github.com/powerline/powerline
+  pip install --user psutil
+else
+  pip install --user git+https://github.com/powerline/powerline
+fi
