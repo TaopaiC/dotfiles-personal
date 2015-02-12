@@ -6,13 +6,6 @@
 				"priority": 50
 			},
 			{
-				"function": "powerline.segments.common.sys.system_load",
-				"priority": 50
-			},
-			{
-				"function": "powerline.segments.common.time.date"
-			},
-			{
 				"function": "powerline.segments.common.time.date",
 				"name": "time",
 				"args": {
@@ -21,7 +14,11 @@
 				}
 			},
 			{
-				"function": "powerline.segments.common.net.hostname"
+				"function": "powerline.segments.common.net.hostname",
+				"args": {
+					"only_if_ssh": true,
+					"exclude_domain": true
+				}
 			}
 		]
 	}
