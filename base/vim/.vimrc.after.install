@@ -1,0 +1,8 @@
+#!/bin/sh
+XDG_CONFIG_HOME=${XDG_CONFIG_HOME-$HOME/.config}
+if [ ! -f ~/.vimrc.after ]; then
+  ln -s $XDG_CONFIG_HOME/vim/.vimrc.after ~/.vimrc.after
+  echo "~/.vimrc.after linked"
+else
+  echo "~/.vimrc.after already existed"
+fi

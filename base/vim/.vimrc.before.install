@@ -1,0 +1,8 @@
+#!/bin/sh
+XDG_CONFIG_HOME=${XDG_CONFIG_HOME-$HOME/.config}
+if [ ! -f ~/.vimrc.before ]; then
+  ln -s $XDG_CONFIG_HOME/vim/.vimrc.before ~/.vimrc.before
+  echo "~/.vimrc.before linked"
+else
+  echo "~/.vimrc.before already existed"
+fi
