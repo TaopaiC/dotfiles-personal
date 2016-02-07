@@ -1,1 +1,2 @@
-plugins=($plugins docker)
+# docker
+plugins=($plugins docker docker-compose)
