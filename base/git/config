@@ -34,6 +34,7 @@
 	xxx  = grep "XXX"
 	graphviz = "!f() { echo 'digraph git {' ; git log --pretty='format:  %h -> { %p }' \"$@\" | sed 's/[0-9a-f][0-9a-f]*/\"&\"/g' ; echo '}'; }; f"
 	profilehtc = !git config user.email \"pc_tao@htc.com\" && git config user.name \"PC Tao\"
+	profilecnyes = !git config user.email \"pct@cnyes.com\" && git config user.name \"PC Tao\"
 [gc]
 	auto = 1
 [instaweb]
