@@ -6,6 +6,8 @@ if [[ -z $TMUXX  ]]; then
   export PATH=$HOME/bin:$PATH
 fi
 
+export EDITOR=vim
+
 for zsh_source in ~/.config/zsh/config.d/*.zsh; do
   source $zsh_source
 done
