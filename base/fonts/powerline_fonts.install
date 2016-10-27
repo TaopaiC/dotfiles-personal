@@ -1,10 +1,12 @@
 #!/bin/bash
 XDG_CONFIG_HOME=${XDG_CONFIG_HOME-$HOME/.config}
-if [ ! -f $HOME/.fonts ]; then
+if [ ! -d $HOME/.fonts ]; then
   ln -s $XDG_CONFIG_HOME/fonts $HOME/.fonts
 else
   echo "~/.fonts already existed"
 fi
+
+cd ~/.fonts
 
 # https://github.com/Lokaltog/powerline-fonts
 if  [ ! -f Inconsolata\ for\ Powerline.otf ]; then
@@ -30,6 +32,12 @@ if  [ ! -f Sauce\ Code\ Powerline\ Regular.otf ]; then
 fi
 if  [ ! -f Sauce\ Code\ Powerline\ Semibold.otf ]; then
   wget https://github.com/Lokaltog/powerline-fonts/raw/master/SourceCodePro/Sauce%20Code%20Powerline%20Semibold.otf
+fi
+if  [ ! -f Sauce\ Code\ Pro\ Light\ Nerd\ Font\ Complete.ttf ]; then
+  wget https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/SourceCodePro/Light/complete/Sauce%20Code%20Pro%20Light%20Nerd%20Font%20Complete.ttf
+fi
+if  [ ! -f 'Sauce Code Pro ExtraLight Nerd Font Complete.ttf' ]; then
+  wget https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/SourceCodePro/Extra-Light/complete/Sauce%20Code%20Pro%20ExtraLight%20Nerd%20Font%20Complete.ttf
 fi
 
 if [ "$(uname)" == "Darwin" ]; then
