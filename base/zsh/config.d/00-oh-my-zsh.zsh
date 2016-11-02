@@ -39,8 +39,9 @@ DEFAULT_USER="pctao"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git history profiles z)
+plugins=(git git-extras history profiles z rsync)
 # work
+export JIRA_RAPID_BOARD=true
 plugins=($plugins knife jira)
 plugins=($plugins sublime tmux)
 ## extended by dots
