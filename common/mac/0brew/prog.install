@@ -2,6 +2,6 @@
 brew install \
   byobu the_silver_searcher git tig \
   reattach-to-user-namespace \
-  neovim vim \
+  vim \
   wget zsh \
   awscli

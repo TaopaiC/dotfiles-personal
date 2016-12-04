@@ -1,0 +1,5 @@
+#!/bin/sh
+if which brew > /dev/null 2>&1; then
+  brew tap neovim/neovim
+  brew install neovim 
+fi
