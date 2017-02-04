@@ -2,3 +2,4 @@
 *.log
 .livereload
 .DS_Store
+.tern-port

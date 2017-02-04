@@ -1,6 +1,7 @@
 [user]
 	name = TaopaiC
 	email = pctao.blog@pctao.org
+	signingkey = EB27A860
 [push]
 	default = matching
 [core]
@@ -34,7 +35,9 @@
 	xxx  = grep "XXX"
 	graphviz = "!f() { echo 'digraph git {' ; git log --pretty='format:  %h -> { %p }' \"$@\" | sed 's/[0-9a-f][0-9a-f]*/\"&\"/g' ; echo '}'; }; f"
 	profilehtc = !git config user.email \"pc_tao@htc.com\" && git config user.name \"PC Tao\"
-	profilecnyes = !git config user.email \"pct@cnyes.com\" && git config user.name \"PC Tao\"
+	profilecnyes = !git config user.email \"pct@cnyes.com\" && git config user.name \"PC Tao\" && git config user.signingkey 904317E4
+	profile = !git config user.email \"pctao.blog@pctao.org\" && git config user.name \"TaopaiC\" && git config user.signingkey EB27A860
+	dsf = "!f() { [ -z \"$GIT_PREFIX\" ] || cd \"$GIT_PREFIX\" && git diff --color \"$@\" | diff-so-fancy  | less --tabs=4 -RFX; }; f"
 [gc]
 	auto = 1
 [instaweb]
