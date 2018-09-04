@@ -3,3 +3,5 @@
 .livereload
 .DS_Store
 .tern-port
+.vscode/settings.json
+.scannerwork
