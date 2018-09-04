@@ -1,2 +1,2 @@
 # ruby
-plugins=($plugins ruby bundler rbenv)
+plugins=($plugins ruby bundler)

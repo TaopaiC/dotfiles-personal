@@ -47,6 +47,7 @@ plugins=(git git-extras history profiles z rsync)
 export JIRA_RAPID_BOARD=true
 plugins=($plugins knife jira)
 plugins=($plugins sublime tmux)
+plugins=($plugins terraform zsh-autosuggestions)
 ## extended by dots
 !!@@plugins
 ## end of extended by dots
@@ -54,4 +55,8 @@ plugins=($plugins sublime tmux)
 alias sudo='nocorrect sudo'
 alias gksu='nocorrect gksu'
 
+A=$(gdate +%s%N)
+
 [[ -s "$ZSH/oh-my-zsh.sh" ]] && source $ZSH/oh-my-zsh.sh
+B=$(gdate +%s%N)
+echo 'zsh plugin inited for' $(expr \( $B - $A \) / 1000000) 'ms'
