@@ -7,8 +7,15 @@ if [[ -z $TMUXX  ]]; then
   export PATH=$HOME/bin:$PATH
 fi
 
+if [ -d $HOME/Library/Android/sdk ]; then
+  export ANDROID_HOME=$HOME/Library/Android/sdk
+  export ANDROID_SDK_HOME=$ANDROID_HOME
+  export PATH=$ANDROID_HOME:$ANDROID_HOME/platform-tools/:$PATH
+fi
+
 if which yarn > /dev/null; then
   export PATH="`yarn global bin`:$PATH"
+  export PATH="$PATH:$HOME/.config/yarn/global/node_modules/.bin"
 fi
 export VISUAL=nvim
 export EDITOR=nvim

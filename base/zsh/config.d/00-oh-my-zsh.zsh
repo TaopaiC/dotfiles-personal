@@ -11,7 +11,10 @@ ZSH_CUSTOM=$XDG_CONFIG_HOME/zsh/oh-my-zsh
 #ZSH_THEME="robbyrussell"
 #ZSH_THEME="powerline"
 #ZSH_THEME="agnoster"
-ZSH_THEME="ys"
+#ZSH_THEME="ys"
+POWERLEVEL9K_MODE='nerdfont-complete'
+ZSH_THEME="powerlevel9k/powerlevel9k"
+POWERLEVEL9K_COLOR_SCHEME="dark"
 DEFAULT_USER="pctao"
 
 # Example aliases

@@ -1,0 +1,12 @@
+#!/bin/sh
+XDG_CONFIG_HOME=${XDG_CONFIG_HOME-$HOME/.config}
+ZSH_CUSTOM=$XDG_CONFIG_HOME/zsh/oh-my-zsh
+
+if [ ! -d $ZSH_CUSTOM/themes/powerlevel9k ]; then
+  echo "install powerlevel9k"
+  if [ ! -d $ZSH_CUSTOM/themes/ ]; then
+    mkdir -p $ZSH_CUSTOM/themes/
+  fi
+  git clone https://github.com/bhilburn/powerlevel9k.git $ZSH_CUSTOM/themes/powerlevel9k
+fi
+
