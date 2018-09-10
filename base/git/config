@@ -37,6 +37,7 @@
 	profilehtc = !git config user.email \"pc_tao@htc.com\" && git config user.name \"PC Tao\"
 	profilecnyes = !git config user.email \"pct@cnyes.com\" && git config user.name \"PC Tao\" && git config user.signingkey 904317E4
 	profile = !git config user.email \"pctao.blog@pctao.org\" && git config user.name \"TaopaiC\" && git config user.signingkey EB27A860
+	profilemai = !git config user.email \"pctao@maicoin.com\" && git config user.name \"PC Tao\" && git config user.signingkey 2028D85EB7988F7A
 	dsf = "!f() { [ -z \"$GIT_PREFIX\" ] || cd \"$GIT_PREFIX\" && git diff --color \"$@\" | diff-so-fancy  | less --tabs=4 -RFX; }; f"
 [gc]
 	auto = 1
@@ -50,3 +51,5 @@
 	file-view-vpane-position = 146
 	main-window-view = FileView
 	history-view-vpane-position = 470
+[gpg]
+	program = gpg2
